@@ -1,0 +1,20 @@
+/* Selector {
+    property: value;
+} */
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    color: whitesmoke;
+}
+h1 {
+    color: black;
+    text-align: center;
+    background-color: deepskyblue;
+}
+a{
+    color:cyan;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}

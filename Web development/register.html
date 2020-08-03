@@ -2,15 +2,26 @@
 <html>
     <head>
         <title>Register</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     <body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>Register</li>
+    </ul>
         <!-- Use GET, not POST -->
         <form method="GET">
-            First Name: <input type="text" name="firstname"><br>
-            Last Name: <input type="text"name="lastname"><br>
-            Email: <input type="email" name="email" required><br>
-            Password: <input type="password" name="password" min="5"><br>
-            Birthday: <input type="date" name="birthday"><br>
+            <label>First Name: </label>
+            <input type="text" name="firstname" placeholder="Enter your first name"><br>
+            <label>Last Name: </label>
+            <input type="text"name="lastname" placeholder="Enter your last name"><br>
+            <label>Email: </label>
+            <input type="email" name="email" placeholder="Enter your email" required><br>
+            <label>Password: </label>
+            <input type="password" name="password" placeholder="Enter your password" min="5"><br>
+            <label>Birthday: </label>
+            <input type="date" name="birthday"><br>
             Gender:
             <input type="radio" name="gender" value="Male">Male
             <input type="radio" name="gender" value="Female">Female
