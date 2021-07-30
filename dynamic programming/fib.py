@@ -4,7 +4,7 @@ def fib(n, memo={}):
     elif n in [1,2]:
         return 1
     else:
-        memo[n] = fib(n - 1) + fib(n-2)
+        memo[n] = fib(n - 1, memo) + fib(n-2, memo)
 
     return memo[n]
 
@@ -13,3 +13,7 @@ def fib_rec(n):
         return 1
     else:
         return fib(n-1) + fib(n-2)
+
+
+if __name__ == "__main__":
+    print(fib(500))
