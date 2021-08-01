@@ -1,4 +1,6 @@
-def fib(n, memo={}):
+import sys  
+
+def fib(n: int, memo={}):
     if n in memo:
         return memo[n]
     elif n in [1,2]:
@@ -16,4 +18,4 @@ def fib_rec(n):
 
 
 if __name__ == "__main__":
-    print(fib(500))
+    print(fib(int(sys.argv[1])))
